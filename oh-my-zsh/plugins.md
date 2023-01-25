@@ -45,7 +45,7 @@ plugins=( [plugins...] zsh-syntax-highlighting)
 
 # **zsh-autosuggestions**
 
-*[Fish](http://fishshell.com/)-like ast/unobtrusive autosuggestions for zsh.*
+*[Fish](http://fishshell.com/)-like fast/unobtrusive autosuggestions for zsh.*
 
 It suggests commands as you type based on history and completions.
 
