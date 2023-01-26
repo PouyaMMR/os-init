@@ -2,9 +2,9 @@
 
 This repository introduces the essential toolkit to initialize a linux OS from scratch.
 
-# 1.  **[Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh)**
+# 1. **Oh My Zsh**
 
-Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org) configuration.
+[Oh My ZSH](https://github.com/ohmyzsh/ohmyzsh) is an open source, community-driven framework for managing your [zsh](https://www.zsh.org) configuration.
 
 ## **Getting Started**
 
@@ -71,15 +71,41 @@ sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 </tr>
 </table>
 
-*Note that any previous `.zshrc` will be renamed to `.zshrc.pre-oh-my-zsh`. After installation, you can move the configuration you want to preserve into the new `.zshrc`.*
+_Note that any previous_ `.zshrc` _will be renamed to_ `.zshrc.pre-oh-my-zsh`. _After installation, you can move the configuration you want to preserve into the new_ `.zshrc`.
 
 ## **Using Oh My Zsh**
 
-### **Plugins**
+## **Plugins**
 
 Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can take a look in the [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) directory and/or the [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) to see what's currently available.
 
-## :wrench: **Worthy Plugins**
+### :wrench: **Worthy Plugins**
 
 See [plugins.md](oh-my-zsh/plugins.md).
 
+## **Themes**
+
+Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred and fifty themes now bundled.
+
+### **Selecting a Theme**
+
+_Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
+
+Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
+
+```
+ZSH_THEME="robbyrussell"
+```
+
+To use a different theme, simply change the value to match the name of your desired theme. For example:
+
+```
+ZSH_THEME="agnoster" # (this is one of the fancy ones)
+# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
+```
+
+_Note: Many themes require installing a [Powerline Font](https://github.com/powerline/fonts) or a [Nerd Font](https://github.com/ryanoasis/nerd-fonts) in order to render properly. Without them, these themes will render [weird prompt symbols](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ#i-have-a-weird-character-in-my-prompt)._
+
+### :art: **Fancy Themes**
+
+See [themes.md](oh-my-zsh/themes.md).
