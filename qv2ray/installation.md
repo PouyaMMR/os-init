@@ -51,3 +51,52 @@ Before proceeding this stage, make sure you have `v2ray` and its asset files ins
 
 4. If you are familiar with creating connections and subscription groups in similar programs such as Matsuri, Shadowsocks, Nekoray, and V2rayNG, the process here is the same.
 
+## **Adding Iran hosted domains**
+
+This can differ depending on which tool you use. In v2ray clients, you can set Domain Resolution Strategy to `IPIfNonMatch` for better routing.
+
+### **Qv2ray**
+
+1. Download [qv2ray_schema.json](https://github.com/bootmortis/iran-hosted-domains/releases/download/202302110054/qv2ray_schema.json) file.
+
+2. Open Preferences and click on Advanced Route Settings.
+
+3. From the bottom of the screen, click on Import Schema.
+
+4. Select the downloaded file.
+
+5. Click on Yes in the opened dialogue box.
+
+6. Click on OK
+
+### **Nekoray**
+
+1. Download [domains.txt](https://github.com/bootmortis/iran-hosted-domains/releases/download/202302110054/domains.txt) file.
+
+2. Open Program in the main page of nekoray.
+
+3. Open preferences and click on Routing Setting.
+
+4. Paste domains.txt file on domain-direct section.
+
+5. Press OK button and restart the app.
+
+### **.dat file**
+
+It can be used in all v2fly, v2ray and xray clients.
+
+1. Download [iran.dat](https://github.com/bootmortis/iran-hosted-domains/releases/download/202302110054/iran.dat) file.
+
+2. Copy/Import file in your client. for example:
+
+    - v2ray linux: `/usr/local/share/v2ray`
+
+3. Add proper rules:
+
+    - `ext:iran.dat:ir`
+    
+    - `ext:iran.dat:other`
+
+    - `ext:iran.dat:ads`
+
+4. Reconnect.
